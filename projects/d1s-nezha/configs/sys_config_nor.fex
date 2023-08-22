@@ -79,9 +79,9 @@ twi_scl         = port:PH14<2><default><default><default>
 twi_sda         = port:PH15<2><default><default><default>
 
 [uart_para]
-uart_debug_port = 0
-uart_debug_tx   = port:PE02<6><1><default><default>
-uart_debug_rx   = port:PE03<6><1><default><default>
+uart_debug_port = 3
+uart_debug_tx   = port:PB06<7><1><default><default>
+uart_debug_rx   = port:PB07<7><1><default><default>
 
 [jtag_para]
 jtag_enable     = 1
@@ -1105,7 +1105,7 @@ usb_used                = 1
 usb_port_type           = 2
 usb_detect_type         = 1
 usb_detect_mode		    = 0
-usb_id_gpio             = port:PB06<0><0><default><default>
+;usb_id_gpio             = port:PB06<0><0><default><default>
 usb_det_vbus_gpio       = port:PB02<0><0><default><default>
 usb_drv_vbus_gpio       = port:PB03<1><0><default><0>
 usb_drv_vbus_type       = 1
@@ -1361,7 +1361,7 @@ ir_addr_cnt         = 0x1
 ;cir --- infra remote configuration
 ;----------------------------------------------------------------------------------
 [cir]
-cir_pin	= port:PB07<5><default><default><default>
+;cir_pin	= port:PB07<5><default><default><default>
 ;-------------------------------------------------------------------------------------
 ;pmu_used                    ---0:not used,1:used
 ;pmu_twi_addr                ---slave address
